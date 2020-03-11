@@ -32,8 +32,33 @@ function enjoyJoke(){
   .catch((error) => {
       let jokeSection = document.getElementsByClassName("joke-section");
       jokeSection.style.background = "red";
-      console.log(error);
   });
 }
 
 const btnJoke = document.getElementById("btn-joke").onclick = enjoyJoke;
+
+// Exercise 4
+
+const btnSearchRepo = document.getElementById("btn-search-repo").onclick = searchRepo;
+
+function searchRepo(){
+  const searchInput = document.getElementById("input-search-repo").value;
+  fetch("https://api.github.com/search/repositories?q="+searchInput)
+  .then((resp) => {
+      if (!resp.ok) {
+          throw new Error('Failed Response');
+        }
+      return resp.json();
+  })
+  .then((repoData) => {
+    let repoItem = document.getElementById('repo-list');
+    for(let i of repoData.items){
+        repoItem.innerHTML += `<li>Repo: ${i.name} <a href="${i.html_url}"> Visit </a></ul>`;
+    }
+  })
+  .catch((error) => {
+    let repoItem = document.getElementById('repo-list');
+    repoItem.innerHTML = "Error ocurred.";
+    console.log(error);
+  });
+}
