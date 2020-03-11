@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Lucas Micheli">
+    <meta name="description" content="Exercise 6 - Topic 1">
+    <meta name="keywords" content="Globant, Bootcamp, Web, UI">
+    <title>JS/DOM Exercise 6</title>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Globant Bootcamp - Topic 1</h1>
+        </header>
+        <section class="hidden-section">
+            <p>Hello World! 👻</p>
+        </section>
+        <button id="btn-msg" type="button">Show a Message 📩</button>
+        <section class="joke-section">
+            <p>This is the Jokes Section (Spoiler: all about Chuck Norris, apparently)</p>
+            <button id="btn-joke" type="button">Enjoy a Joke! 🤣</button>
+            <p id="new-joke"></p>
+        </section>
+        <section class="search-repos">
+            <p>Search for a repositorie on GitHub 💻</p>
+            <form>
+                <input type="text" id="input-search-repo" placeholder="Enter repo here...">
+                <button id="btn-search-repo" type="button">Search Repo 👀</button>
+            </form>
+            <ul id="repo-list">
+                <!-- Items of Repo List load Here -->
+            </ul>
+        </section>
+        <section class="table">
+            <p>Generate a table of available courses</p>
+            <button id="btn-table" type="button">Gen table 📈</button>
+        </section>
+        <section class="first-section">
+            <p>This is the first section</p>
+            <img src="https://loremflickr.com/320/240" alt="Random image from Flickr"/>
+        </section>
+        <section class="second-section">
+            <p>This is the second section</p>
+            <img src="https://www.fillmurray.com/300/200" alt="Random image of Bill Murray">
+        </section>
+        <section class="third-section">
+            <p>This is the third section</p>
+            <img src="https://placebear.com/640/360" alt="Random image of bears">
+        </section>
+        <footer>
+            <p>This is the footer of the exercise.</p>
+        </footer>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+</html>
