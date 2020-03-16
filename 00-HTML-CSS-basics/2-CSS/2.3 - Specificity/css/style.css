@@ -1,0 +1,48 @@
+html {
+    font-size: 14px;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+header {
+    background-color: peru;
+    text-align: center;
+}
+
+footer {
+    background-color: aquamarine;
+    text-align: center;
+}
+
+aside {
+    background-color: blanchedalmond;
+}
+
+nav {
+    background-color: lightblue;
+}
+
+/* 2.3 */
+
+.header {
+    font-size: 46px;
+    background-color: magenta;
+}
+
+.footer {
+    font-size: 10px;
+    background-color: magenta;
+}
+
+.content {
+    font-size: 14px;
+}
+
+.navigation {
+    font-size: 12px;
+    background-color: blue;
+}
+
+.sidebar {
+    font-size: 10px;
+    background-color: magenta;
+}

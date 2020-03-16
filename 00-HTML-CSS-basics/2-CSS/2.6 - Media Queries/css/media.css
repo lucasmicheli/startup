@@ -1,0 +1,26 @@
+@media screen and (max-width:1200px) {
+    .logo{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .text-desc{
+        width: 100%;
+    }
+    .column{
+        flex-direction: row;
+        max-width: 100%;
+    }
+    .img-box{
+        margin: auto 10px;
+    }
+}
+
+@media screen and (max-width:992px) {
+    .column{
+        flex-direction: column;
+        max-width: 100%;
+    }
+    .img-box{
+        margin: 10px auto;
+    }
+}

@@ -1,0 +1,7 @@
+Q: How could you add weight to the global font definition to win over the classes added by point 3?
+
+A: To add weight to the global font definition we use the property !important and the universal selector. Example:
+
+*{
+ font-size: 30px !important;
+}

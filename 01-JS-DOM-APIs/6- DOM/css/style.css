@@ -1,0 +1,41 @@
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+header,
+footer {
+    margin: 1rem;
+}
+
+section {
+    width: 90%;
+    margin: .5rem auto;
+    text-align: center;
+    border: 1px solid lightcoral;
+}
+
+button {
+    margin: 0 1rem;
+    padding: .5rem;
+}
+
+ul {
+    list-style-type: none;
+    text-align: right;
+    margin-right: 1rem;
+}
+
+ul li {
+    margin: 1rem;
+}
+
+table {
+    width: 97.5%;
+    text-align: center;
+    margin: 1rem;
+    padding: .5rem;
+    border: 1px solid peru;
+}
