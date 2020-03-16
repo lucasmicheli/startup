@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Lucas Micheli">
+    <meta name="description" content="Globant Bootcamp.">
+    <meta name="keywords" content="web, development, html, website">
+    <title>Sign Up!</title>
+</head>
+<body>
+    <header>
+        <h1>Sign Up!</h1>
+    </header>
+
+    <form id="contact-form" method="POST" action="https://example.com/contact.php">
+        <input type="hidden" name="redirect" value="https://www.globant.com" />
+        <fieldset>
+            <legend>Your contact information</legend>
+            <label for="first-name">First name</label>
+            <input type="text" id="first-name" name="first-name" value="" autofocus required>
+            <label for="last-name">Last name</label>
+            <input type="text" id="last-name" name="last-name" value="" required>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+            <label for="date">Date of birth</label>
+            <input type="date" id="date" name="date" required>
+            <label for="fav-sport">Which is your favourite sport?</label>
+            <select id="fav-sport" name="fav-sport" required>
+                <option selected>Select one ...</option>
+                <option value="tennis">Tennis</option>
+                <option value="football">Football</option>
+                <option value="swimming">Swimming</option>
+                <option value="chess">Chess</option>
+            </select>
+            <label for="comments">Tell us about you:</label>
+            <textarea id="comments" name="comments" cols="30" rows="4" required></textarea>
+            <button type="reset">Clear</button>
+            <button type="submit">Submit</button>
+        </fieldset>
+    </form>
+</body>
+</html>

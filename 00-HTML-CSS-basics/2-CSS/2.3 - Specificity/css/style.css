@@ -1,0 +1,52 @@
+html {
+    font-size: 14px;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+header {
+    background-color: peru;
+    text-align: center;
+}
+
+footer {
+    background-color: aquamarine;
+    text-align: center;
+}
+
+aside {
+    background-color: blanchedalmond;
+}
+
+nav {
+    background-color: lightblue;
+}
+
+/* 2.3 */
+
+.header {
+    font-size: 46px;
+}
+
+.footer {
+    font-size: 10px;
+}
+
+.content {
+    font-size: 14px;
+}
+
+.navigation {
+    font-size: 12px;
+}
+
+.sidebar {
+    font-size: 10px;
+}
+
+[class$="er"] {
+    background-color: magenta;
+}
+
+[class*="a"]:not([class$="r"]){
+    background-color: blue;
+}
