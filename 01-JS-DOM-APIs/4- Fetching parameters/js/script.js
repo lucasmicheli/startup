@@ -13,7 +13,7 @@ function alertMessage(){
   alert("This is the alert message.");
 };
 
-const btnMsg = document.getElementById("btn-msg").onclick = alertMessage;
+const btnMsg = document.getElementById("btn-msg").addEventListener("click", alertMessage);
 
 // Exercise 3
 
@@ -26,20 +26,20 @@ function enjoyJoke(){
       return resp.json();
   })
   .then((jokeData) => {
-      let newJoke = document.getElementById("new-joke");
+      const newJoke = document.getElementById("new-joke");
       newJoke.innerText = jokeData.value.joke;
   })
   .catch((error) => {
-      let jokeSection = document.getElementsByClassName("joke-section");
+      let jokeSection = document.getElementsByClassName("joke-section")[0];
       jokeSection.style.background = "red";
   });
 }
 
-const btnJoke = document.getElementById("btn-joke").onclick = enjoyJoke;
+const btnJoke = document.getElementById("btn-joke").addEventListener("click", enjoyJoke);
 
 // Exercise 4
 
-const btnSearchRepo = document.getElementById("btn-search-repo").onclick = searchRepo;
+const btnSearchRepo = document.getElementById("btn-search-repo").addEventListener("click", searchRepo);
 
 function searchRepo(){
   const searchInput = document.getElementById("input-search-repo").value;

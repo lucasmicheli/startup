@@ -13,4 +13,4 @@ function alertMessage(){
   alert("This is the alert message.");
 };
 
-const btnMsg = document.getElementById("btn-msg").onclick = alertMessage;
+const btnMsg = document.getElementById("btn-msg").addEventListener("click", alertMessage);

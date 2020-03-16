@@ -13,7 +13,7 @@ function alertMessage(){
   alert("This is the alert message.");
 };
 
-const btnMsg = document.getElementById("btn-msg").onclick = alertMessage;
+const btnMsg = document.getElementById("btn-msg").addEventListener("click", alertMessage);
 
 // Exercise 3
 
@@ -26,14 +26,14 @@ function enjoyJoke(){
       return resp.json();
   })
   .then((jokeData) => {
-      let newJoke = document.getElementById("new-joke");
+      const newJoke = document.getElementById("new-joke");
       newJoke.innerText = jokeData.value.joke;
   })
   .catch((error) => {
-      let jokeSection = document.getElementsByClassName("joke-section");
+      let jokeSection = document.getElementsByClassName("joke-section")[0];
       jokeSection.style.background = "red";
       console.log(error);
   });
 }
 
-const btnJoke = document.getElementById("btn-joke").onclick = enjoyJoke;
+const btnJoke = document.getElementById("btn-joke").addEventListener("click", enjoyJoke);
