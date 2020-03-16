@@ -25,12 +25,10 @@ nav {
 
 .header {
     font-size: 46px;
-    background-color: magenta;
 }
 
 .footer {
     font-size: 10px;
-    background-color: magenta;
 }
 
 .content {
@@ -39,10 +37,16 @@ nav {
 
 .navigation {
     font-size: 12px;
-    background-color: blue;
 }
 
 .sidebar {
     font-size: 10px;
+}
+
+[class$="er"] {
     background-color: magenta;
+}
+
+[class*="a"]:not([class$="r"]){
+    background-color: blue;
 }

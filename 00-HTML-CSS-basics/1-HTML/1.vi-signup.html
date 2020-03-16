@@ -18,15 +18,15 @@
         <fieldset>
             <legend>Your contact information</legend>
             <label for="first-name">First name</label>
-            <input type="text" id="first-name" name="first-name" value="" autofocus>
+            <input type="text" id="first-name" name="first-name" value="" autofocus required>
             <label for="last-name">Last name</label>
-            <input type="text" id="last-name" name="last-name" value="">
+            <input type="text" id="last-name" name="last-name" value="" required>
             <label for="email">Email</label>
-            <input type="email" id="email" name="email">
+            <input type="email" id="email" name="email" required>
             <label for="date">Date of birth</label>
-            <input type="date" id="date" name="date">
+            <input type="date" id="date" name="date" required>
             <label for="fav-sport">Which is your favourite sport?</label>
-            <select id="fav-sport" name="fav-sport">
+            <select id="fav-sport" name="fav-sport" required>
                 <option selected>Select one ...</option>
                 <option value="tennis">Tennis</option>
                 <option value="football">Football</option>
@@ -34,7 +34,7 @@
                 <option value="chess">Chess</option>
             </select>
             <label for="comments">Tell us about you:</label>
-            <textarea id="comments" name="comments" cols="30" rows="4"></textarea>
+            <textarea id="comments" name="comments" cols="30" rows="4" required></textarea>
             <button type="reset">Clear</button>
             <button type="submit">Submit</button>
         </fieldset>
