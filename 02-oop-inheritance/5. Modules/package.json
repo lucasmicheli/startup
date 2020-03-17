@@ -1,0 +1,15 @@
+{
+  "name": "test-package",
+  "version": "1.0.0",
+  "description": "Exercise 5 - Topic 2",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "LM",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.8.7"
+  }
+}
