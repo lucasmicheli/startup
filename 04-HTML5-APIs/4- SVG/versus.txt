@@ -1,0 +1,5 @@
+SVG vs Bitmap
+
+SVG is used mostly in logos, icons and vector graphics.
+
+Bitmap is used when we have complex precision images, like photos.
