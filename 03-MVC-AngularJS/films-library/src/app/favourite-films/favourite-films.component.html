@@ -1,0 +1,13 @@
+<div class="description">
+    <h1>Favourites 🍿 </h1>
+    <p>Here are your most loved films.</p>
+</div>
+
+<div class="films-list" *ngFor="let film of favouriteFilms">
+    
+    <span>🍿 {{film.title}}  </span>
+    <span>({{film.year}})  - </span>
+    <span>Duration: {{film.duration}} minutes</span>
+    <button (click)="removeFavourite(film)" (click)="getFilms()" class="btn-del">Delete</button>
+    <br>
+</div>

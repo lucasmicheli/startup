@@ -1,0 +1,42 @@
+.film-details {
+    font-family: Helvetica, Arial, sans-serif;
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: .5rem;
+}
+
+.film-poster {
+    width: 300px;
+
+}
+
+.film-poster>img{
+    border: 1px solid black;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+h4 {
+    font-style: bold;
+    font-size: 1.5rem;
+}
+
+ul {
+    list-style-type: circle;
+    line-height: 2rem;
+}
+
+.btn-fav-film {
+    margin-top: 1rem;
+    padding: 1rem;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.btn-fav-film:hover {
+    cursor: pointer;
+}

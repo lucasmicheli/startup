@@ -1,0 +1,8 @@
+<div class="films-library">
+    <h2>Select a film to get more info:</h2>
+    <section *ngFor="let film of films; index as filmId">
+        <h3 class="film-title" [routerLink]="['/films', filmId]">
+            {{film.title}}
+        </h3>   
+    </section>
+</div>

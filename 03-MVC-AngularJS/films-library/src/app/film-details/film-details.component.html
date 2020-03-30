@@ -1,0 +1,19 @@
+<section class="film-details">
+    
+    <div class="film-poster">
+        <img src="{{film.poster}}" class="film-poster">
+    </div>
+
+    <div class="film-info">
+        <h3>{{film.title}}</h3>
+        <p>Year: {{film.year}}</p>
+        <p>Duration: {{film.duration}} minutes</p>
+        <h4>Main Cast:</h4>
+        <ul>
+            <li *ngFor="let actor of film.cast">{{actor}}</li>
+        </ul>
+
+        <button class="btn-fav-film" (click)="addFavourite(film)">Save to Favourites 🍿</button>
+
+    </div>
+</section>
