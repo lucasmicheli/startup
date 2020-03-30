@@ -10,33 +10,35 @@ function init() {
 
 function testWebSocket() {
     websocket = new WebSocket(wsUri);
-    websocket.onopen = function(evt) { onOpen(evt) };
-    websocket.onclose = function(evt) { onClose(evt) };
-    websocket.onmessage = function(evt) { onMessage(evt) };
-    websocket.onerror = function(evt) { onError(evt) };
+    websocket.onopen = onOpen;
+    websocket.customSend = doSend;
+    websocket.onclose = onClose;
+    websocket.onmessage = onMessage;
+    websocket.onerror = onError.bind(websocket);
 }
 
-function onOpen(evt) {
+function onOpen() {
     writeToScreen("CONNECTED");
-    doSend("WebSocket rocks");
+    this.customSend("WebSocket rocks");
+    //const send = doSend.bind(this);
 }
 
-function onClose(evt) {
+function onClose() {
     writeToScreen("DISCONNECTED");
 }
 
-function onMessage(evt) {
-    writeToScreen('<span style="color: blue;">RESPONSE: ' + evt.data+'</span>');
-    websocket.close();
+function onMessage() {
+    writeToScreen('<span style="color: blue;">RESPONSE</span>');
+    this.close();
 }
 
-function onError(evt) {
-    writeToScreen('<span style="color: red;">ERROR:</span> ' + evt.data);
+function onError() {
+    writeToScreen('<span style="color: red;">ERROR:</span>');
 }
 
 function doSend(message) {
     writeToScreen("SENT: " + message);
-    websocket.send(message);
+    this.send(message);
 }
 
 function writeToScreen(message) {
