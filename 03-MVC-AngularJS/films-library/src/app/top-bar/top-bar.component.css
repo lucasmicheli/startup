@@ -1,0 +1,35 @@
+.top-bar {
+    width: 97.5%;
+    margin: auto;
+    background-color: lightgray;
+    border: 1px solid black;
+    border-radius: 5px;    
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+h1 {
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+h1:hover {
+    cursor: pointer;
+}
+
+.fav-films {
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: .5rem;
+    color: white;
+    background-color: black;
+    border-radius: 5px;
+}
+
+.fav-films:hover {
+    cursor: pointer;
+    opacity: 0.75;
+}
