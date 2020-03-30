@@ -1,7 +1,7 @@
 // Exercise 3
 
-var wsUri = "wss://echo.websocket.org/";
-var output;
+const wsUri = "wss://echo.websocket.org/";
+let output;
 
 function init() {
     output = document.getElementById("output");
