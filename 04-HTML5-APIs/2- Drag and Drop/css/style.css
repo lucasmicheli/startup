@@ -21,7 +21,7 @@ body{
     text-align: center;
 }
 
-.files{
+.files-area{
     width:  500px;
     height: 250px;
     border: 3px solid black;
@@ -32,12 +32,12 @@ body{
     align-items: center;    
 }
 
-.list{
+.list-files{
     margin: 20px;
     text-align: center;
+    line-height: 1.5rem;
 }
 
-.new-file{
-    margin: 10px auto;
-    list-style-type: none;
+.file-content{
+    margin: auto;
 }
